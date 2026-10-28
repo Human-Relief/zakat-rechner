@@ -1,6 +1,6 @@
 /* =============================================================================
  * Quick-Donate BAR — horizontal site-wide donation banner (Shadow DOM web comp).
- * MATW-style: currency · amount presets + free input · purpose dropdown ·
+ * Layout: currency · amount presets + free input · purpose dropdown ·
  * payment-method trust icons · "Schnell spenden" → prefilled Fundraisingbox form.
  *
  * Embed (HTML Embed, ideally inside the Navbar so it shows on every page):
@@ -149,7 +149,7 @@
       .free input { border: 0; outline: 0; padding: 9px 8px 9px 12px; font-size: 13px; width: 84px; background: transparent; color: var(--ink); }
       .free .cuk { padding: 0 11px; color: var(--muted); align-self: stretch; display: grid; place-items: center; background: var(--soft); font-size: 13px; font-weight: 700; }
 
-      /* amount presets — outlined in CTA colour, solid when selected (MATW look) */
+      /* amount presets — outlined in CTA colour, solid when selected */
       .amts { display: inline-flex; gap: 7px; }
       .amt { border: 1.5px solid var(--cta); background: #fff; border-radius: 8px; padding: 9px 13px; font-size: 13px; font-weight: 700; color: var(--cta); cursor: pointer; transition: .12s; white-space: nowrap; line-height: 1; }
       .amt:hover { background: color-mix(in srgb, var(--cta) 7%, #fff); }
@@ -171,7 +171,7 @@
       .pay.mc i:first-child { background: #eb001b; }
       .pay.mc i:last-child { background: #f79e1b; margin-left: -4px; mix-blend-mode: multiply; }
 
-      /* CTA — pulsing halo (MATW-style) */
+      /* CTA — pulsing halo */
       @keyframes qd-pulse {
         0%   { box-shadow: 0 0 0 0 color-mix(in srgb, var(--cta) 50%, transparent); }
         70%  { box-shadow: 0 0 0 9px color-mix(in srgb, var(--cta) 0%, transparent); }
@@ -181,7 +181,7 @@
       .go:hover { background: var(--cta-d); }
       @media (prefers-reduced-motion: reduce) { .go { animation: none; } }
 
-      /* ---- MOBILE: MATW-style full-width vertical stack (compact) ---- */
+      /* ---- MOBILE: full-width vertical stack (compact) ---- */
       @media (max-width: 767px) {
         .bar { background: var(--accent); border-bottom: 0; }
         .inner { max-width: 560px; padding: 8px; gap: 6px; align-items: stretch; justify-content: stretch; }

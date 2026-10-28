@@ -1,6 +1,6 @@
 /* =============================================================================
  * Zakat-Rechner — self-contained Web Component (Shadow DOM)
- * Replica of the MATW multi-step calculator, German / EUR.
+ * Multi-step Zakat calculator, German / EUR.
  *
  * Embed in Webflow (HTML Embed element):
  *   <div data-zakat-rechner
